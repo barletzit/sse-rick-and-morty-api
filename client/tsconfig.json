@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "types": ["styled-components"],
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" },
+  ],
+
+}
