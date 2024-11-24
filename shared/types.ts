@@ -1,4 +1,4 @@
-export interface Character {
+export type Character = {
   id: number;
   name: string;
   status: string;
@@ -17,9 +17,9 @@ export interface Character {
   episode: string[];
   url: string;
   created: string;
-}
+};
 
-export interface ApiResponse {
+export type ApiResponse = {
   info: {
     count: number;
     pages: number;
@@ -27,7 +27,7 @@ export interface ApiResponse {
     prev: string | null;
   };
   results: Character[];
-}
+};
 
 export type ProgressEvent = {
   resourceType: Resource;
@@ -61,7 +61,7 @@ const status = {
 
 type SyncStatus = keyof typeof status;
 
-export interface SyncState {
+export type SyncState = {
   status: SyncStatus;
   progress: number;
   currentPage: number;
@@ -70,7 +70,7 @@ export interface SyncState {
   totalCharacters: number;
   characters: Character[];
   error: string | null;
-}
+};
 
 const resource = {
   character: "character",
@@ -79,5 +79,3 @@ const resource = {
 } as const;
 
 export type Resource = keyof typeof resource;
-
-export type ProcessDataResult = Omit<SyncEvent, "type" | "percentage">;

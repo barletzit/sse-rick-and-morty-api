@@ -1,4 +1,4 @@
-import { Character } from "../types";
+import { Character } from "../../../shared/types";
 import {
   CharacterCard as Card,
   CharacterImage,
@@ -8,9 +8,9 @@ import {
   StatusIndicator,
 } from "../styles";
 
-interface CharacterCardProps {
+type CharacterCardProps = {
   character: Character;
-}
+};
 
 const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => (
   <Card>
