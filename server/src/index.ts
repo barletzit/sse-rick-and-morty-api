@@ -1,4 +1,3 @@
-// server.ts
 import express from "express";
 import cors from "cors";
 import { SseCharactersHandler } from "./sse-handlers";

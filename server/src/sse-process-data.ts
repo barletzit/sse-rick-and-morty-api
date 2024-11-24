@@ -41,7 +41,7 @@ export const processData = async (
         resourceData,
       });
 
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // for a small delay
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     }
     sendEvent({
       type: "complete",
