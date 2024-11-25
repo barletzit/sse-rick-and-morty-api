@@ -2,6 +2,9 @@
 
 This project demonstrates real-time data synchronization using Server-Sent Events (SSE) to fetch and display character data from the Rick and Morty API.
 
+[![rick-and-morty-api-sse](https://img.youtube.com/vi/KdQMyvV4aec/0.jpg)](https://www.youtube.com/watch?v=KdQMyvV4aec)
+
+
 ### What is SSE?
 
 Server-Sent Events (SSE) is a server push technology enabling a client to receive automatic updates from a server via HTTP connection. Unlike WebSockets, SSE is a unidirectional communication channel - server to client only.
